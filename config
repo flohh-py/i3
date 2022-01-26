@@ -196,7 +196,9 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym --release Caps_Lock exec pkill -SIGRTMIN+10 i3blocks
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
+
 bindsym $mod+Tab split toggle;exec --no-startup-id notify-send 'Split Orientation Toggle'
 bindsym $alt+Tab exec rofi -show window -theme Pop-Dark -show-icons
 bindsym $mod+p move workspace to output right
